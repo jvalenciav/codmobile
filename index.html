@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarjeta de Presentación</title>
     <link rel="stylesheet" href="styles.css">
-    <STYLE>
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+    <style>
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
 body {
     display: flex;
@@ -40,7 +40,7 @@ body {
 }
 
 .card-content .logo img {
-    width: 180px;
+    width: 150px;
     height: auto;
 }
 
@@ -142,7 +142,7 @@ hr {
 /* Responsiveness */
 @media (max-width: 600px) {
     .card {
-        width: 95%;
+        width: 90%;
         padding: 15px;
     }
 
@@ -151,12 +151,16 @@ hr {
         height: 100px;
     }
 
+    .card-content .logo img {
+        width: 40px;
+    }
+
     .card-content h1 {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .card-content h2 {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .card-content h3 {
@@ -176,22 +180,16 @@ hr {
         margin: 5px 0;
     }
 
-    .card-content .logo img {
-        width: 150px;
-    }
-
     .profile-section {
-        flex-direction: column;
+        justify-content: space-between;
     }
 
     .card-content .logo {
-        margin-left: 0;
-        margin-top: 10px;
+        margin-left: 10px;
     }
 }
 
-
-</STYLE>
+    </style>
 </head>
 <body>
     <div class="card">
@@ -205,7 +203,8 @@ hr {
                     <img src="https://ralca.mx/wp-content/uploads/2021/02/logo-1.png" alt="Logo RALCA">
                 </div>
             </div>
-            <h2>Socio en RALCA S.A DE CV.</h2>
+            <h2>Desarrollador de Software</h2>
+            <h3>Socio en RALCA S.A DE CV.</h3>
             <hr>
             <div class="contact-info">
                 <a href="mailto:jvalencia@ralca.com" class="btn btn-email">
