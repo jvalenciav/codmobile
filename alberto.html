@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta de Presentación</title>
+    <link rel="stylesheet" href="styles.css">
+  <style>
+    @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f7f7f7;
+    font-family: 'Arial', sans-serif;
+}
+
+.card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Ancho fijo de 400px */
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.profile-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.card-content .logo {
+    margin-left: 15px;
+}
+
+.card-content .logo img {
+    width: 190px;
+    height: auto;
+}
+
+.card-content h1 {
+    font-size: 26px;
+    margin: 0;
+    color: #333;
+}
+
+.card-content h2 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #666;
+}
+
+.card-content h3 {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #999;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 20px 0;
+}
+
+.profile-pic img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contact-info .btn {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background 0.3s ease;
+    width: calc(50% - 10px);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.btn-email {
+    background-color: #1a73e8;
+}
+
+.btn-email:hover {
+    background-color: #0c52b0;
+}
+
+.btn-whatsapp {
+    background-color: #00913E;
+}
+
+.btn-whatsapp:hover {
+    background-color: #128c7e;
+}
+
+.btn-call {
+    background-color: #ff5722;
+}
+
+.btn-call:hover {
+    background-color: #e64a19;
+}
+
+.btn-linkedin {
+    background-color: #0077b5;
+}
+
+.btn-linkedin:hover {
+    background-color: #005582;
+}
+
+.btn-location {
+    background-color: #4CAF50;
+}
+
+.btn-location:hover {
+    background-color: #388E3C;
+}
+
+.icon {
+    margin-right: 8px;
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+    .card {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .profile-pic img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .card-content .logo img {
+        width: 120px;
+    }
+
+    .card-content h1 {
+        font-size: 22px;
+    }
+
+    .card-content h2 {
+        font-size: 16px;
+    }
+
+    .card-content h3 {
+        font-size: 14px;
+    }
+
+    .contact-info .btn {
+        width: 100%;
+        padding: 8px 15px;
+    }
+
+    .contact-info {
+        gap: 5px;
+    }
+
+    .contact-info p {
+        margin: 5px 0;
+    }
+
+    .profile-section {
+    }
+
+    .card-content .logo {
+        margin-left: 10px;
+    }
+}
+
+  </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-content">
+            <h1>Alberto Ramirez de Aguilar</h1>
+            <div class="profile-section">
+                <div class="profile-pic">
+                    <img src="https://i.imgur.com/vpOBmfQ.png">
+                </div>
+                <div class="logo">
+                    <img src="https://ralca.mx/wp-content/uploads/2021/02/logo-1.png" alt="Logo RALCA">
+                </div>
+            </div>
+            <h2>Socio de Grupo RALCA</h2>
+            
+            <hr>
+            <div class="contact-info">
+                <a href="mailto:ara@ralca.com.mx?subject=Me%20interesaria%20contactarte.&body=Hola%20,%20me%20gustaria%20estar%20en%20contacto%20contigo." class="btn btn-email">
+                    <span class="icon">&#9993;</span> Contactame
+                </a>
+                <a href="https://wa.me/5554001200?text=Hola%20Alberto,%20me%20gustaria%20estar%20en%20contacto%20contigo." target="_blank" class="btn btn-whatsapp">
+                    <span class="icon">&#x1F4F1;</span> Escribeme
+                </a>
+                <a href="tel:+5554001200" class="btn btn-call">
+                    <span class="icon">&#9742;</span> Llamame!
+                </a>
+                <a href="https://www.linkedin.com/in/héctor-javier-gonzález-flores-89961631/" target="_blank" class="btn btn-linkedin">
+                    <span class="icon fa fa-linkedin"></span> Ver LinkedIn
+                </a>
+                <a href="https://ralca.mx" target="_blank" class="btn btn-location">
+                    <span class="icon fa fa-map-marker"></span> Sitio Web
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
