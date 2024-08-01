@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Juan Carlos Valencia Villena
+ORG:RALCA S.A DE CV.
+TITLE:Desarrollador de Addons SAP B1 
+TEL;TYPE=WORK,VOICE:+5580281227
+EMAIL;TYPE=PREF,INTERNET:sraf@ralca.com.mx
+URL:https://www.linkedin.com/in/juancarlosvalenciav/
+ADR;TYPE=WORK:;;Tu Dirección;Ciudad;Estado;Código Postal;País
+END:VCARD
